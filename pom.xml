@@ -19,6 +19,12 @@
         </license>
     </licenses>
 
+	<scm>
+		<connection>scm:git:https://github.com/julianohaze/voucher-code-generator-java</connection>
+		<developerConnection>scm:git:https://github.com/julianohaze/voucher-code-generator-java</developerConnection>
+		<url>scm:git:https://github.com/julianohaze/voucher-code-generator-java</url>
+	</scm>
+
     <dependencies>
         <dependency>
             <groupId>org.testng</groupId>
@@ -34,4 +40,11 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+    
+    <distributionManagement>
+		<repository>
+			<id>syncode-releases</id>
+			<url>http://nexus.syncode.com.br/content/repositories/syncode-releases/</url>
+		</repository>
+	</distributionManagement>
 </project>
