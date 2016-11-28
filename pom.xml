@@ -25,6 +25,26 @@
 		<url>scm:git:https://github.com/julianohaze/voucher-code-generator-java</url>
 	</scm>
 
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+				<configuration>
+					<tagNameFormat>{project.version}</tagNameFormat>
+					<tagBase>https://svn.syncode.com.br/repo/ping-pong/tags/releases/pillas/</tagBase>
+				</configuration>
+				<dependencies>
+					<dependency>
+						<groupId>org.tmatesoft.svnkit</groupId>
+						<artifactId>svnkit</artifactId>
+						<version>LATEST</version>
+					</dependency>
+				</dependencies>
+			</plugin>
+		</plugins>
+	</build>
     <dependencies>
         <dependency>
             <groupId>org.testng</groupId>
